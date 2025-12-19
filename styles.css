@@ -1,0 +1,657 @@
+@font-face {
+    font-family: inter;
+    src: url(Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* "inter" is defined as the typography for everything*/
+    font-family: inter; 
+    span{
+        color: #4CAF4F;
+    }
+    p{
+        color: #717171;
+    }
+    h1, h2, h3{
+        color: #4D4D4D;
+    }
+}
+/* Header styles */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    background: #F5F7FA;
+}
+.logo{
+    cursor: pointer;
+}
+/* nav-bar styles */
+.nav-bar ul{
+    display: flex;
+    gap: 3em;
+    list-style: none;
+    li{
+        cursor: pointer;
+    }
+}
+
+.account-btns button{
+    cursor: pointer;
+    font-size: 1em;
+    margin: 1em;
+    background: none;
+    border: none;
+}
+.account-btns .sing-btn{
+    color: white;
+    background: #4CAF4F;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+/* ======================================================hero section===========================================================*/
+
+.hero{
+    background: #F5F7FA;
+}
+.hero-display{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 3em 0;
+    font-size: 2em;
+}
+.hero-display img{
+    max-width: 100%;
+}
+.text-side button{
+    cursor: pointer;
+    color: white;
+    background: #4CAF4F;
+    padding: 1em;
+    border-radius: 0.5em;
+    border: none;
+}
+.dots{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+.dots button{
+        height: 1em;
+        width: 1em;
+        background: #4caf4f85;
+        border-radius: 100%;
+        border: none;
+        cursor: pointer;
+    }
+.dots .selected{
+            background: #4caf4f;
+        }
+
+/* ======================================================client's section===========================================================*/
+
+.clients{
+    text-align: center;
+    margin: 2em;
+    h2{
+        font-size: 2em;
+    }
+    p{
+        margin: 2em;
+    }
+}
+.clients-display{
+    margin: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cards-display{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3em 0;
+}
+.card{
+    max-width: 20%;
+    box-shadow: 0 0 5px rgb(240, 240, 240);
+    border-radius: 1em;
+    padding: 3em;
+    font-size: 1em;
+}
+/* "the-unseen" is a subsection added to clients because is very small */
+.the-unseen{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3em 0;
+    .text-side{
+        text-align: start;
+        max-width: 40%;
+        p{
+            margin: 1em 0;
+        }
+    }
+}
+.the-unseen img{
+    max-width: 100%;
+}
+/* ============================================the stat's section===================================================================== */
+
+.stats{
+    display: flex;
+    background: #F5F7FA;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3em 0;
+    .text-side {
+        font-size: 1.5em;
+        max-width: 30%;
+        p{
+            font-size: 0.8em;
+        }
+    }
+}
+/* grid */
+.grid-stats{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3em;
+}
+/* style for every grid's spot */
+.grid-spot{
+    display: flex;
+    gap: 0.1em;
+}
+/* ================================================="how-to section======================================================================== */
+
+.how-to{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2em 0;
+    .text-side{
+        max-width: 40%;
+        p{
+            margin: 2em 0;
+        }
+    }
+}
+.how-to img{
+    max-width: 100%;
+}
+
+/* =================================================comment section========================================================================== */
+.comment{
+    display: flex;
+    background: #F5F7FA;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3em;
+    .text-side{
+        font-size: 1em;
+        max-width: 40%;
+        span{
+            font-size: 1.5em;
+            
+        }
+        .clients-display{
+            margin: 0;
+            padding: 0;
+            justify-content: space-around
+        }
+    }
+}
+.tesla{
+    border-radius: 20px;
+    overflow: hidden;
+    height: 25em;
+    width: 30em;
+}
+.tesla img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =========================================blog section====================================================================== */
+
+.blog{
+    text-align: center;
+    margin: 3em;
+    font-size: 1em;
+}
+.blog-container{
+    width: 100%;
+}
+.blog-display{
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    gap: 1em;
+    width: 100%;
+}
+.blog-card img{
+    margin-top: 3em;
+    border-radius: 0.5em;
+    max-width: 90%;
+}
+.blog-card div{
+    
+    margin-top: -1em;
+    padding: 1em;
+    font-size: 1em;
+    border-radius: 0.5em;
+    background: #F5F7FA;
+    box-shadow: 0px 8px 16px 0px #ABBED166;
+    span{
+        cursor: pointer;
+    }
+}
+/* ======================================================demo section=================================================== */
+.demo{
+    margin-top: 2em;
+    text-align: center;
+    background: #F5F7FA;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    h1{
+        font-size: 4em;
+        max-width: 80%;
+    }
+    button{
+        cursor: pointer;
+        background: #4CAF4F;
+        color: white;
+        margin: 3em;
+        padding: 1em;
+        border-radius: 0.5em;
+        border: none;
+    }
+}
+
+
+/* ====================================================footer section============================================================== */
+
+/* FOOTER */
+.footer {
+    background: #263238;
+    color: white;
+    padding: 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3em;
+}
+
+.socials {
+    display: flex;
+    gap: 1em;
+    margin-top: 2em;
+    font-size: 2em;
+}
+
+.socials img {
+    background: rgb(63, 63, 63);    
+    border-radius: 90%;
+    cursor: pointer;
+    height: 1em;
+    width: 1em;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.8em;
+}
+
+.footer-links h4 {
+    margin-bottom: 2em;
+    font-size: 1em;
+}
+
+.footer-links p {
+    margin-bottom: 1em;
+    color: #ffffff;
+    cursor: pointer;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+}
+.input-box {
+    display: flex;
+    gap: 0.1em;
+    align-items: center;
+    background: rgb(139, 139, 139);
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+}
+.input-box img{
+    cursor: pointer;
+}
+.input-box p {
+    margin-right: 10px;
+}
+
+.input-box input{
+    max-width: 15em;
+    width: 10em;
+    border: none;
+    background: rgb(139, 139, 139);
+}
+::placeholder{
+    color: white;
+}
+
+
+
+/* ================================================= Responsive for tablets (≤768px)========================================================== */
+
+@media (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        .logo{
+            order: 1;
+            flex: 1;
+        }
+        .nav-bar{
+            order: 2;
+            position: relative;
+            
+        }
+        .nav-bar::before {
+        content: '☰';
+        font-size: 24px;
+        cursor: pointer;
+        color: #000;
+        }
+        nav{
+            display: none;
+        }
+        .account-btns{
+            order: 3;
+        }
+    }
+    /* responsive in hero section */
+    .hero-display{
+        display: flex;
+        flex-direction: column ;
+        gap: 1em;
+    }
+    .text-side{
+        text-align: center;
+    }
+
+    /* responsive in client section */
+    
+    .cards-display{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .card{
+        padding: 1em;
+        max-width: 90%;
+    }
+    /* "the-unseen" section */
+    .the-unseen{
+        flex-direction: column;
+        .text-side{
+            text-align: center;
+            max-width: 99%;
+        }
+    }
+    /* responsive in stats */
+    .stats{
+        flex-direction: column;
+        .text-side{
+            text-align: center;
+            max-width: 99%;
+            margin-bottom: 2em;
+        }
+    }
+
+    /* responsive in "how-to" */
+    .how-to{
+        flex-direction: column;
+        .text-side{
+            text-align: center;
+            max-width: 99%;
+        }
+    }
+
+    /* responsive in comment */
+    .comment{
+        padding: 1em;
+        flex-direction: column;
+        .text-side{
+            padding: 2em 0;
+            text-align: justify;
+            max-width: 99%;
+            .clients-display{
+                margin-top: 1em;
+                span{
+                    grid-column: span 2;
+                }
+            }
+
+        }
+    }
+    .comment .tesla{
+        display: none;
+        
+    }
+    /* resonsive in blog */
+    .blog{
+        margin: 2em 0;
+        padding: 1em;
+    }
+    .blog-display{
+        overflow-x: scroll;
+        padding-bottom: 2em;
+    }
+    .blog-card img{
+        max-width: 90%;
+    }
+    /* responsive for demo */
+    .demo{
+        h1{
+            font-size: 2em;
+        }
+    }
+    /* responsive for footer */
+    .footer{
+        flex-direction: column;
+        padding: 1em;
+    }
+    .footer-brand{
+        padding: 1em;
+        .socials{
+            margin-top: 0.5em;
+        }
+    }
+    .footer-links h4{
+        margin-bottom: 1em;
+    }
+    .footer-links p{
+        margin-bottom: 0.5em;
+    }
+    .input-box{
+        justify-content: space-around;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =================================================== Responsive for phone (≤ 480px) ======================================================== */
+@media (max-width: 480px){
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        .logo{
+            order: 2;
+            flex: 1;
+        }
+        .nav-bar{
+            order: 1;
+            position: relative;
+            
+        }
+        .nav-bar::before {
+        content: '☰';
+        font-size: 24px;
+        cursor: pointer;
+        color: #000;
+        }
+        nav{
+            display: none;
+        }
+        .account-btns{
+            order: 3;
+        }
+    }
+    /* responsive in hero section */
+    .hero-display{
+        display: flex;
+        flex-direction: column ;
+        gap: 1em;
+    }
+    .text-side{
+        text-align: center;
+    }
+
+    /* responsive in client section */
+    .clients-display{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        gap: 1em;
+    }
+    .cards-display{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .card{
+        padding: 1em;
+        max-width: 90%;
+    }
+    /* "the-unseen" section */
+    .the-unseen{
+        flex-direction: column;
+        .text-side{
+            text-align: center;
+            max-width: 99%;
+        }
+    }
+    /* responsive in stats */
+    .stats{
+        flex-direction: column;
+        .text-side{
+            text-align: center;
+            max-width: 99%;
+            margin-bottom: 2em;
+        }
+    }
+
+    /* responsive in "how-to" */
+    .how-to{
+        flex-direction: column;
+        .text-side{
+            text-align: center;
+            max-width: 99%;
+        }
+    }
+
+    /* responsive in comment */
+    .comment{
+        padding: 1em;
+        flex-direction: column;
+        .text-side{
+            padding: 2em 0;
+            text-align: justify;
+            max-width: 99%;
+            .clients-display{
+                margin-top: 1em;
+                span{
+                    grid-column: span 2;
+                }
+            }
+
+        }
+    }
+    .comment .tesla{
+        display: none;
+        
+    }
+    /* resonsive in blog */
+    .blog{
+        margin: 2em 0;
+        padding: 1em;
+    }
+    .blog-display{
+        overflow-x: scroll;
+        padding-bottom: 2em;
+    }
+    .blog-card img{
+        max-width: 27em;
+    }
+    /* responsive for demo */
+    .demo{
+        h1{
+            font-size: 2em;
+        }
+    }
+    /* responsive for footer */
+    .footer{
+        flex-direction: column;
+        padding: 1em;
+    }
+    .footer-brand{
+        padding: 1em;
+        .socials{
+            margin-top: 0.5em;
+        }
+    }
+    .footer-links{
+        grid-template-columns: repeat(2,1fr);
+        .email{
+            grid-column: span 2;
+        }
+    }
+    .footer-links h4{
+        margin-bottom: 1em;
+    }
+    .footer-links p{
+        margin-bottom: 0.5em;
+    }
+    .input-box{
+        justify-content: space-around;
+    }
+}
